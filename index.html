@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12141a">
+<title>Lazar Paroski</title>
+<meta name="description" content="Lazar Paroski, Engineering Physics &amp; Computing at Queen's University. Photonic Ising machines, driven quantum systems, quantum photonics.">
+<link rel="icon" href="assets/favicon.svg">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+<nav class="nav">
+  <a class="nav__name" href="index.html">Lazar Paroski</a>
+  <div class="nav__links">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<header class="wrap hero">
+  <div data-reveal>
+    <h1 class="h1">Hello!</h1>
+    <p class="lede">I&#8217;m a fourth-year Engineering Physics student at Queen&#8217;s, joining Prof. Michael Reimer&#8217;s group at IQC Waterloo this summer through an Undergraduate Research Award to work on nanowire quantum dots, and attending USEQIP (Undergraduate School on Experimental Quantum Information Processing). My undergraduate research with Prof. Bhavin Shastri has been on photonic Ising machines, alongside numerical work with Prof. Ivan Iorsh on correlation functions in periodically driven quantum spin chains.</p>
+    <p class="lede">The physics that excites me is what happens when light stops being a passive carrier, when strong coupling to matter turns photons into objects you can generate one at a time, tailor, and make interact. My research interests are in experimental quantum optics: single and entangled photon sources, cavity and waveguide QED, and photon-photon and photon-phonon interactions, across solid-state emitters, atomic systems, and the quantum optics of two-dimensional materials. I want to come out of grad school as an experimentalist with the theoretical depth to either uncover new phenomena in these systems or engineer new quantum devices from them.</p>
+  </div>
+  <div data-reveal>
+    <div class="hero__portrait" role="img" aria-label="Lazar Paroski"></div>
+    <div class="hero__cap">Kingston, ON</div>
+    <div class="affil">
+      <img loading="lazy" decoding="async" src="assets/photos/Home_Media/queens_grey_logo.png" alt="Queen&#8217;s University">
+      <img loading="lazy" decoding="async" src="assets/photos/Home_Media/IQC_logo_grey.png" alt="Institute for Quantum Computing">
+    </div>
+  </div>
+</header>
+
+<canvas id="rabi-strip" class="strip strip--hero" aria-hidden="true"></canvas>
+<div class="strip__cap"><div class="wrap">resonantly driven quantum dot &#183; Rabi reappearance</div></div>
+
+<section class="wrap section" data-reveal>
+  <p class="label"><b>01</b>currently</p>
+  <div class="row"><div class="row__date">summer 2026</div><div><div class="row__title">Undergraduate Research Award &#183; Institute for Quantum Computing, Waterloo</div><div class="row__desc">Nanowire quantum-dot single-photon sources and entanglement swapping with Prof. Michael Reimer.</div></div></div>
+  <div class="row"><div class="row__date">since 2025</div><div><div class="row__title">Undergraduate Researcher &#183; Shastri Lab</div><div class="row__desc">A photonic Ising machine from cascaded TFLN Mach-Zehnder modulators, SOAs, and an RFSoC FPGA, accelerating combinatorial optimization.</div></div></div>
+  <div class="row"><div class="row__date">since 2024</div><div><div class="row__title">Research Assistant &#183; Iorsh Group</div><div class="row__desc">Long-range spatial correlations in the periodically driven transverse-field Ising chain. Preprint on arXiv, 2026.</div></div></div>
+</section>
+
+<section class="wrap section" data-reveal>
+  <p class="label"><b>02</b>writing</p>
+  <div class="row"><div class="row__date">arXiv</div><div><div class="row__title">Long range spatial correlations in the periodically driven transverse-field Ising model</div><div class="row__desc">I. V. Iorsh and L. Paroski. <a href="https://arxiv.org/abs/2607.15665" target="_blank" rel="noopener">arXiv:2607.15665</a>, 2026.</div></div></div>
+  <div class="row"><div class="row__date"><span class="dot"></span>in prep</div><div><div class="row__title">Ising Machines for Protein Folding and Engineering</div><div class="row__desc">L. Paroski and B. J. Shastri, in preparation, 2026.</div></div></div>
+</section>
+
+<footer class="footer">
+  <a href="mailto:lazar.paroski@queensu.ca">lazar.paroski@queensu.ca</a>
+  <div class="footer__right">
+    <a href="https://www.linkedin.com/in/lazar-paroski/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Lazar-Paroski" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://orcid.org/0009-0006-1756-4058" target="_blank" rel="noopener">ORCID</a>
+    <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=npYN-DMAAAAJ" target="_blank" rel="noopener">Scholar</a>
+    <canvas id="wavepacket-mark" aria-hidden="true"></canvas>
+    <span class="footer__copy">&#169; 2026</span>
+  </div>
+</footer>
+
+<script src="assets/rabi.js"></script>
+<script src="assets/wavepacket.js"></script>
+<script src="assets/reveal.js"></script>
+</body>
+</html>

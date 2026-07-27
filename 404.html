@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12141a">
+<title>404 &#183; Lazar Paroski</title>
+<link rel="icon" href="assets/favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .nf { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 80px 24px; }
+  .nf h1 { font-size: clamp(56px, 14vw, 80px); font-weight: 200; letter-spacing: -0.02em; color: var(--fg); line-height: 1; margin: 8px 0 2px; }
+  .nf canvas { display: block; width: min(420px, 86vw); height: 92px; margin: 14px 0 4px; }
+  .nf p { max-width: 380px; font-size: 14px; color: var(--fg-3); font-weight: 300; margin: 8px 0 0; }
+  body { min-height: 100vh; display: flex; flex-direction: column; }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav__name" href="index.html">Lazar Paroski</a>
+  <div class="nav__links">
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<main class="nf">
+  <div class="eyebrow">state not found</div>
+  <h1>404</h1>
+  <canvas id="decohere-mark" aria-hidden="true"></canvas>
+  <p>This page is not an eigenstate of the site. Whatever you measured, it decohered.</p>
+  <a class="cta" href="index.html">&#8592;&nbsp; back to home</a>
+</main>
+
+<footer class="footer">
+  <a href="mailto:lazar.paroski@queensu.ca">lazar.paroski@queensu.ca</a>
+  <div class="footer__right">
+    <a href="https://www.linkedin.com/in/lazar-paroski/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Lazar-Paroski" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://orcid.org/0009-0006-1756-4058" target="_blank" rel="noopener">ORCID</a>
+    <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=npYN-DMAAAAJ" target="_blank" rel="noopener">Scholar</a>
+    <canvas id="wavepacket-mark" aria-hidden="true"></canvas>
+    <span class="footer__copy">&#169; 2026</span>
+  </div>
+</footer>
+
+<script src="assets/decohere.js"></script>
+<script src="assets/wavepacket.js"></script>
+</body>
+</html>

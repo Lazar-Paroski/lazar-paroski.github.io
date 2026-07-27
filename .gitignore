@@ -1,0 +1,11 @@
+# local dev tooling (not needed on the live site)
+serve.py
+
+# AI assistant files - never publish
+CLAUDE.md
+.claude/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.stackdump
