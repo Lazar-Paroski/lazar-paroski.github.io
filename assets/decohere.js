@@ -47,7 +47,9 @@
   }
 
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    t = 0; draw(); return;
+    t = 0; draw();
+    window.addEventListener('resize', draw);
+    return;
   }
   requestAnimationFrame(frame);
 })();

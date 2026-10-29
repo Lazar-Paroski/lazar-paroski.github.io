@@ -91,6 +91,7 @@
 
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     draw(1);
+    window.addEventListener('resize', function () { draw(1); });
     return;
   }
   requestAnimationFrame(function (n) { frame(n, n); });

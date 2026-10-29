@@ -190,12 +190,15 @@
   }
 
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-
-    if (s.length > 6) {
-      for (let i = Math.floor(s.length * 0.35); i < Math.floor(s.length * 0.55); i++) s[i] = -1;
-      for (let i = 0; i < s.length; i++) th[i] = s[i] > 0 ? -Math.PI / 2 : Math.PI / 2;
-    }
-    draw();
+    const still = function () {
+      if (s.length > 6) {
+        for (let i = Math.floor(s.length * 0.35); i < Math.floor(s.length * 0.55); i++) s[i] = -1;
+        for (let i = 0; i < s.length; i++) th[i] = s[i] > 0 ? -Math.PI / 2 : Math.PI / 2;
+      }
+      draw();
+    };
+    still();
+    window.addEventListener('resize', still);
     return;
   }
 

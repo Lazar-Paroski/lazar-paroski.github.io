@@ -122,7 +122,9 @@
   }
 
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    t = 1.6; draw(); return;
+    t = 1.6; draw();
+    window.addEventListener('resize', draw);
+    return;
   }
   requestAnimationFrame(function (n) { frame(n, n); });
 })();

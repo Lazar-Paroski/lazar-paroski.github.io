@@ -74,6 +74,7 @@
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     t = 1.2;
     draw();
+    window.addEventListener('resize', draw);
     return;
   }
 
